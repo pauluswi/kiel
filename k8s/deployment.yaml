@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiel
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kiel
+  template:
+    metadata:
+      labels:
+        app: kiel
+    spec:
+      containers:
+      - name: kiel
+        image: pauluswi/kiel:latest
+        ports:
+        - containerPort: 8080
