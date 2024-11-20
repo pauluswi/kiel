@@ -15,14 +15,15 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
-        go-version: 1.21
+        go-version: 1.23
 
     - name: Build and Test
       run: |
         go build -v
         go test -v ./...
 
-    - name: Build Docker Image
+    # I comment these commands below since I will not maintain the envi permanently
+     - name: Build Docker Image
       uses: docker/build-push-action@v4
       with:
         context: .

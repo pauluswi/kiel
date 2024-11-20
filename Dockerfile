@@ -1,9 +1,9 @@
 # Use an official Golang runtime as a parent image
-FROM golang:1.21 AS builder
+FROM golang:1.23 AS builder
 WORKDIR /app
 
 # Copy the Go modules files
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 
 # Copy the source code and build
