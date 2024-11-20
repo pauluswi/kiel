@@ -22,8 +22,7 @@ jobs:
         go build -v
         go test -v ./...
 
-    # I comment these commands below since I will not maintain the envi permanently
-     - name: Build Docker Image
+    - name: Build Docker Image
       uses: docker/build-push-action@v4
       with:
         context: .
