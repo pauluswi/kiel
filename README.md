@@ -12,7 +12,7 @@ This repository showcases a simple Golang microservice deployed to Kubernetes wi
   - [Features](#features)
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
-    - [Clone the Repository](#clone-the-repository)
+  - [Clone the Repository](#clone-the-repository)
 
 ---
 
