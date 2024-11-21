@@ -1,5 +1,13 @@
 # kiel - golang microservice with CI/CD and kubernetes
 
+# Golang Microservice with CI/CD and Kubernetes
+
+![Go Version](https://img.shields.io/badge/Go-1.23-blue)
+![CI/CD](https://github.com/pauluswi/kiel/actions/workflows/ci-cd.yaml/badge.svg)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Production--Ready-blue?logo=kubernetes)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
+
+
 This repository showcases a simple Golang microservice deployed to Kubernetes with a CI/CD pipeline using GitHub Actions.
 
 ---
