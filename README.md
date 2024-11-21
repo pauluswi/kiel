@@ -79,7 +79,7 @@ golang-microservice/
 └── README.md                # Project documentation
 ```
 
-### CI/CD Workflow
+## CI/CD Workflow
 The CI/CD pipeline is implemented using GitHub Actions and performs the following steps:
 
 Checkout Code: Fetch the latest code from the repository.
@@ -88,3 +88,40 @@ Checkout Code: Fetch the latest code from the repository.
 3. Deploy to Kubernetes: Apply Kubernetes manifests to deploy or update the application.
 
 The pipeline is defined in .github/workflows/ci-cd.yaml.
+
+## Kubernetes Deployment
+### Deploy to Kubernetes
+
+1. Ensure your Kubernetes cluster is running:
+```bash
+minikube start  # Or your preferred local Kubernetes setup
+```
+
+2. Apply the Kubernetes manifests:
+```bash
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+```
+
+3. Verify the Deployment:
+```bash
+kubectl get pods
+kubectl get services
+```
+
+4. Access the Service:
+
+If using Minikube, expose the service:
+```bash
+minikube service golang-microservice
+```
+
+
+## Contributing
+Contributions are welcome! If you have suggestions, improvements, or bug fixes, please:
+1. Fork the repository.
+2. Create a feature branch.
+3. Submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
