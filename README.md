@@ -55,3 +55,36 @@ To work with this project, ensure you have the following installed:
 git clone https://github.com/pauluswi/kiel.git
 cd kiel
 ```
+
+### Build and Run Locally
+```bash
+go build -o app .
+./app
+```
+Access the application at http://localhost:8080.
+
+## Project Structure
+```plaintext
+golang-microservice/
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yaml       # GitHub Actions pipeline configuration
+├── k8s/
+│   ├── deployment.yaml      # Kubernetes Deployment manifest
+│   └── service.yaml         # Kubernetes Service manifest
+├── main.go                  # Golang HTTP server code
+├── Dockerfile               # Docker image build configuration
+├── go.mod                   # Go module dependency file
+├── go.sum                   # Dependency checksum file
+└── README.md                # Project documentation
+```
+
+### CI/CD Workflow
+The CI/CD pipeline is implemented using GitHub Actions and performs the following steps:
+
+Checkout Code: Fetch the latest code from the repository.
+1. Build and Test: Compile the Golang application and run unit tests.
+2. Dockerize: Build and push the Docker image to a container registry (e.g., Docker Hub).
+3. Deploy to Kubernetes: Apply Kubernetes manifests to deploy or update the application.
+
+The pipeline is defined in .github/workflows/ci-cd.yaml.
