@@ -40,7 +40,7 @@ The microservice serves a "Hello, World!" response at the root endpoint.
 ## Prerequisites
 
 To work with this project, ensure you have the following installed:
-- [Go](https://golang.org/dl/) (1.21 or later)
+- [Go](https://golang.org/dl/) (1.23 or later)
 - [Docker](https://www.docker.com/)
 - [Kubernetes CLI (kubectl)](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - A local Kubernetes cluster ([Minikube](https://minikube.sigs.k8s.io/docs/start/), [Kind](https://kind.sigs.k8s.io/), etc.)
@@ -113,7 +113,7 @@ kubectl get services
 
 If using Minikube, expose the service:
 ```bash
-minikube service golang-microservice
+minikube service kiel
 ```
 
 
