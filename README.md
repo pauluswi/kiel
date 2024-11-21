@@ -65,7 +65,7 @@ Access the application at http://localhost:8080.
 
 ## Project Structure
 ```plaintext
-golang-microservice/
+kiel/
 ├── .github/
 │   └── workflows/
 │       └── ci-cd.yaml       # GitHub Actions pipeline configuration
@@ -75,7 +75,6 @@ golang-microservice/
 ├── main.go                  # Golang HTTP server code
 ├── Dockerfile               # Docker image build configuration
 ├── go.mod                   # Go module dependency file
-├── go.sum                   # Dependency checksum file
 └── README.md                # Project documentation
 ```
 
