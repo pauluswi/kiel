@@ -1,4 +1,4 @@
-# Golang Microservice with CI/CD and Kubernetes
+# kiel - golang microservice with CI/CD and kubernetes
 
 This repository showcases a simple Golang microservice deployed to Kubernetes with a CI/CD pipeline using GitHub Actions.
 
@@ -6,7 +6,7 @@ This repository showcases a simple Golang microservice deployed to Kubernetes wi
 
 ## Table of Contents
 
-- [Golang Microservice with CI/CD and Kubernetes](#golang-microservice-with-cicd-and-kubernetes)
+ [Golang Microservice with CI/CD and Kubernetes](#golang-microservice-with-cicd-and-kubernetes)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Features](#features)
